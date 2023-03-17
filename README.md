@@ -13,17 +13,22 @@ because python version >= 3.8, dist is deprecated, just lower python version
 
 don't use Calvisitor
 
-### connecting to 337d, berkeley major map, map not found error 
+4. connecting to 337d, berkeley major map, map not found error 
+
 comment out everything in carla_ros_bridge/bridge.py that mentions Towns
 
-### connecting to 337d, berkeley major map, version mismatch error 
+5. connecting to 337d, berkeley major map, version mismatch error 
+
 pip install carla==0.9.12\
 if gotton Client=0.9.12, while simulator=0.9.12-dirty warning, that is fine, it's only a warning, it's already connected. \
 If client version 0.9.13, an easy fix is to go into bridge.py and comment out lines exits the program is version mismatches.
 
 
-if inside conda environment, ros2 launch in terminal gives import carla error, while opening python in terminal and running import carla is fine \
+6. if inside conda environment, ros2 launch in terminal gives import carla error, while opening python in terminal and running import carla is fine 
+
 deactivate conda, redo pip install carla
 
-other fixes to try:\
+
+
+### other fixes to try:
 run map with -prefernividia
